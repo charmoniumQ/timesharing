@@ -1,0 +1,7 @@
+logs/
+*.o
+*.log
+*.bin
+*.old
+*.exe
+vivado/

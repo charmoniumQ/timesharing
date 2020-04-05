@@ -27,8 +27,5 @@ RUN sh -c "sudo rm -rf $HOME/tmp $HOME/opt/leon && mkdir $HOME/tmp && cd $HOME/t
 
 ENV PATH=${HOME}/opt/leon/mklinuximg:${HOME}/opt/leon/sparc-elf-4.4.2/bin/:/home/grayson5/opt/leon/bin:${PATH}
 
-RUN printf '. ./xilinx.sh\necho Initialized Xlinx\n' > $HOME/.bashrc
-
-# cd "${HOME}/esp/socs/xilinx-vc707-xc7vx485t/"
-# make -j48 esp-config &&  make -j48 soft && make vivado-syn && make -j48 linux
-# FPGA_HOST=localhost XIL_HW_SERVER_PORT=3121 make fpga-program
+# I have this in the in the volume
+RUN mv /home/grayson5/esp/socs/xilinx-vc707-xc7vx485t /home/grayson5/esp/socs/xilinx-vc707-xc7vx485t.old

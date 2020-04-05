@@ -16,6 +16,8 @@ env \
 	os_type=redhat \
 	${extra_args} \
 	mount_cwd=yes \
+	mounts=${PWD}/xilinx-vc707-xc7vx485t:${HOME}/esp/socs/xilinx-vc707-xc7vx485t\
 	be_user=yes \
 	forward_x11=yes \
-	../docker.sh
+	command=./entrypoint.sh \
+	./docker.sh
