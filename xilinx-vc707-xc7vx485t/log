@@ -1,0 +1,611 @@
+GNU Make 3.82
+Built for x86_64-redhat-linux-gnu
+Copyright (C) 2010  Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Reading makefiles...
+Reading makefile `Makefile'...
+Reading makefile `/home/grayson5/esp/utils/Makefile' (search path) (no ~ expansion)...
+Reading makefile `/home/grayson5/esp/utils/design.mk' (search path) (no ~ expansion)...
+Reading makefile `/home/grayson5/esp/constraints/xilinx-vc707-xc7vx485t/Makefile.inc' (search path) (no ~ expansion)...
+Reading makefile `.grlib_config' (search path) (don't care) (no ~ expansion)...
+Reading makefile `.esp_config' (search path) (don't care) (no ~ expansion)...
+Reading makefile `/home/grayson5/esp/utils/accelerators.mk' (search path) (no ~ expansion)...
+Reading makefile `/home/grayson5/esp/utils/sc_components.mk' (search path) (no ~ expansion)...
+Reading makefile `/home/grayson5/esp/utils/examples.mk' (search path) (no ~ expansion)...
+Reading makefile `/home/grayson5/esp/utils/grlib/leon3_sw.mk' (search path) (no ~ expansion)...
+Updating makefiles....
+Updating goal targets....
+Considering target file `mac-hls'.
+ File `mac-hls' does not exist.
+  Considering target file `mac-wdir'.
+   File `mac-wdir' does not exist.
+   Finished prerequisites of target file `mac-wdir'.
+  Must remake target `mac-wdir'.
+Invoking recipe from /home/grayson5/esp/utils/accelerators.mk:205 to update target `mac-wdir'.
+Putting child 0x20ca290 (mac-wdir) PID 644 on the chain.
+Live child 0x20ca290 (mac-wdir) PID 644 
+    MKDIR mac-wdir
+Reaping winning child 0x20ca290 PID 644 
+Live child 0x20ca290 (mac-wdir) PID 646 
+Reaping winning child 0x20ca290 PID 646 
+Removing child 0x20ca290 PID 646 from chain.
+  Successfully remade target file `mac-wdir'.
+ Finished prerequisites of target file `mac-hls'.
+Must remake target `mac-hls'.
+Invoking recipe from /home/grayson5/esp/utils/accelerators.mk:218 to update target `mac-hls'.
+Putting child 0x212d580 (mac-hls) PID 654 on the chain.
+Live child 0x212d580 (mac-hls) PID 654 
+    INFO Running HLS for available implementations of mac
+Reaping winning child 0x212d580 PID 654 
+Live child 0x212d580 (mac-hls) PID 655 
+    MAKE mac-hls
+GNU Make 3.82
+Built for x86_64-redhat-linux-gnu
+Copyright (C) 2010  Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Reading makefiles...
+Reading makefile `Makefile'...
+Reading makefile `../../common/common.mk' (search path) (no ~ expansion)...
+Updating goal targets....
+# echo -e 'mac\nv\n/home/grayson5/esp\n\n\n\n\n\n\n\n\n\n\n\n\n' | ../../utils/scripts/init_accelerator.sh
+# make -d COMPONENT= mac-hls &> log
+Considering target file `hls'.
+ File `hls' does not exist.
+ Finished prerequisites of target file `hls'.
+Must remake target `hls'.
+Invoking recipe from Makefile:11 to update target `hls'.
+make[1]: Entering directory `/home/grayson5/esp/accelerators/vivado_hls/mac/hls-work-virtex7'
+Putting child 0x212da20 (hls) PID 658 on the chain.
+Live child 0x212da20 (hls) PID 658 
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/grayson5/opt/Xilinx/Vivado/2018.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/home/grayson5/opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'grayson5' on host 'dholak.cs.illinois.edu' (Linux_x86_64 version 4.4.0-171-generic) on Tue Apr 07 05:00:30 UTC 2020
+INFO: [HLS 200-10] In directory '/home/grayson5/esp/accelerators/vivado_hls/mac/hls-work-virtex7'
+INFO: [HLS 200-10] Creating and opening project '/home/grayson5/esp/accelerators/vivado_hls/mac/hls-work-virtex7/mac_dma32_w32'.
+INFO: [HLS 200-10] Adding design file '../src/espacc.cc' to the project
+INFO: [HLS 200-10] Adding test bench file '../tb/tb.cc' to the project
+INFO: [HLS 200-10] Creating and opening solution '/home/grayson5/esp/accelerators/vivado_hls/mac/hls-work-virtex7/mac_dma32_w32/mac_acc'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7v2000tflg1925-2'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+GNU Make 3.82
+Built for x86_64-redhat-linux-gnu
+Copyright (C) 2010  Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Reading makefiles...
+Reading makefile `csim.mk'...
+Reading makefile `Makefile.rules' (search path) (no ~ expansion)...
+Reading makefile `/dev/null' (search path) (don't care) (no ~ expansion)...
+Reading makefile `obj/../../../../../tb/tb.d' (search path) (don't care) (no ~ expansion)...
+Reading makefile `obj/../../../../../src/espacc.d' (search path) (don't care) (no ~ expansion)...
+Reading makefile `obj/tb.d' (search path) (don't care) (no ~ expansion)...
+Reading makefile `obj/espacc.d' (search path) (don't care) (no ~ expansion)...
+Considering target file `csim.exe'.
+ File `csim.exe' does not exist.
+  Considering target file `obj/.dir'.
+   File `obj/.dir' does not exist.
+   Looking for an implicit rule for `obj/.dir'.
+   Trying pattern rule with stem `obj'.
+   Found an implicit rule for `obj/.dir'.
+   Finished prerequisites of target file `obj/.dir'.
+  Must remake target `obj/.dir'.
+Invoking recipe from Makefile.rules:500 to update target `obj/.dir'.
+make[2]: Entering directory `/home/grayson5/esp/accelerators/vivado_hls/mac/hls-work-virtex7/mac_dma32_w32/mac_acc/csim/build'
+Putting child 0x99cd50 (obj/.dir) PID 714 on the chain.
+Live child 0x99cd50 (obj/.dir) PID 714 
+Reaping winning child 0x99cd50 PID 714 
+Live child 0x99cd50 (obj/.dir) PID 716 
+Reaping winning child 0x99cd50 PID 716 
+Removing child 0x99cd50 PID 716 from chain.
+  Successfully remade target file `obj/.dir'.
+  Considering target file `obj/tb.o'.
+   File `obj/tb.o' does not exist.
+    Considering target file `../../../../../tb/tb.cc'.
+     Looking for an implicit rule for `../../../../../tb/tb.cc'.
+     Trying pattern rule with stem `tb.cc'.
+     Trying implicit prerequisite `../../../../../tb/tb.cc,v'.
+     Trying pattern rule with stem `tb.cc'.
+     Trying implicit prerequisite `../../../../../tb/RCS/tb.cc,v'.
+     Trying pattern rule with stem `tb.cc'.
+     Trying implicit prerequisite `../../../../../tb/RCS/tb.cc'.
+     Trying pattern rule with stem `tb.cc'.
+     Trying implicit prerequisite `../../../../../tb/s.tb.cc'.
+     Trying pattern rule with stem `tb.cc'.
+     Trying implicit prerequisite `../../../../../tb/SCCS/s.tb.cc'.
+     No implicit rule found for `../../../../../tb/tb.cc'.
+     Finished prerequisites of target file `../../../../../tb/tb.cc'.
+    No need to remake target `../../../../../tb/tb.cc'.
+    Pruning file `obj/.dir'.
+   Finished prerequisites of target file `obj/tb.o'.
+  Must remake target `obj/tb.o'.
+Invoking recipe from csim.mk:78 to update target `obj/tb.o'.
+Putting child 0x9a1710 (obj/tb.o) PID 717 on the chain.
+Live child 0x9a1710 (obj/tb.o) PID 717 
+   Compiling ../../../../../tb/tb.cc in debug mode
+Reaping winning child 0x9a1710 PID 717 
+Live child 0x9a1710 (obj/tb.o) PID 718 
+Reaping winning child 0x9a1710 PID 718 
+Removing child 0x9a1710 PID 718 from chain.
+  Successfully remade target file `obj/tb.o'.
+  Considering target file `obj/espacc.o'.
+   File `obj/espacc.o' does not exist.
+    Considering target file `../../../../../src/espacc.cc'.
+     Looking for an implicit rule for `../../../../../src/espacc.cc'.
+     Trying pattern rule with stem `espacc.cc'.
+     Trying implicit prerequisite `../../../../../src/espacc.cc,v'.
+     Trying pattern rule with stem `espacc.cc'.
+     Trying implicit prerequisite `../../../../../src/RCS/espacc.cc,v'.
+     Trying pattern rule with stem `espacc.cc'.
+     Trying implicit prerequisite `../../../../../src/RCS/espacc.cc'.
+     Trying pattern rule with stem `espacc.cc'.
+     Trying implicit prerequisite `../../../../../src/s.espacc.cc'.
+     Trying pattern rule with stem `espacc.cc'.
+     Trying implicit prerequisite `../../../../../src/SCCS/s.espacc.cc'.
+     No implicit rule found for `../../../../../src/espacc.cc'.
+     Finished prerequisites of target file `../../../../../src/espacc.cc'.
+    No need to remake target `../../../../../src/espacc.cc'.
+    Pruning file `obj/.dir'.
+   Finished prerequisites of target file `obj/espacc.o'.
+  Must remake target `obj/espacc.o'.
+Invoking recipe from csim.mk:84 to update target `obj/espacc.o'.
+Putting child 0x9a4b00 (obj/espacc.o) PID 721 on the chain.
+Live child 0x9a4b00 (obj/espacc.o) PID 721 
+   Compiling ../../../../../src/espacc.cc in debug mode
+Reaping winning child 0x9a4b00 PID 721 
+Live child 0x9a4b00 (obj/espacc.o) PID 722 
+Reaping winning child 0x9a4b00 PID 722 
+Removing child 0x9a4b00 PID 722 from chain.
+  Successfully remade target file `obj/espacc.o'.
+ Finished prerequisites of target file `csim.exe'.
+Must remake target `csim.exe'.
+Invoking recipe from Makefile.rules:399 to update target `csim.exe'.
+Putting child 0x9a52e0 (csim.exe) PID 725 on the chain.
+Live child 0x9a52e0 (csim.exe) PID 725 
+   Generating csim.exe
+Reaping winning child 0x9a52e0 PID 725 
+Live child 0x9a52e0 (csim.exe) PID 726 
+Reaping winning child 0x9a52e0 PID 726 
+Removing child 0x9a52e0 PID 726 from chain.
+Successfully remade target file `csim.exe'.
+make[2]: Leaving directory `/home/grayson5/esp/accelerators/vivado_hls/mac/hls-work-virtex7/mac_dma32_w32/mac_acc/csim/build'
+--version: No such file or directory
+****start*****
+Test PASSED.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-10] Analyzing design file '../src/espacc.cc' ... 
+WARNING: [HLS 214-113] Variables defined outside dataflow region are not supported: ../src/espacc.cc:94:5
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 354.652 ; gain = 0.043 ; free physical = 274893 ; free virtual = 966416
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 354.652 ; gain = 0.043 ; free physical = 274893 ; free virtual = 966416
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-501] Unrolling loop 'load_label0' (../src/espacc.cc:25) in function 'load(ap_int<32>*, dma_word*, unsigned int, dma_info*, int, int)': changing partial unrolling into complete unrolling since the unrolling factor (=1) is no less than the loop trip count (=1).
+INFO: [XFORM 203-501] Unrolling loop 'load_label0' (../src/espacc.cc:25) in function 'load(ap_int<32>*, dma_word*, unsigned int, dma_info*, int, int)' completely.
+INFO: [XFORM 203-501] Unrolling loop 'store_label1' (../src/espacc.cc:51) in function 'store(ap_int<32>*, dma_word*, unsigned int, dma_info*, int, int)': changing partial unrolling into complete unrolling since the unrolling factor (=1) is no less than the loop trip count (=1).
+INFO: [XFORM 203-501] Unrolling loop 'store_label1' (../src/espacc.cc:51) in function 'store(ap_int<32>*, dma_word*, unsigned int, dma_info*, int, int)' completely.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 355.172 ; gain = 0.562 ; free physical = 274879 ; free virtual = 966404
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 483.141 ; gain = 128.531 ; free physical = 274868 ; free virtual = 966394
+INFO: [XFORM 203-1101] Packing variable 'in1.word.V' (../src/espacc.cc:72) into a 32-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'load_ctrl' (../src/espacc.cc:75) into a 96-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'out.word.V' (../src/espacc.cc:72) into a 32-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'store_ctrl' (../src/espacc.cc:75) into a 96-bit variable.
+WARNING: [XFORM 203-561] Updating loop upper bound from 256 to 1 for loop 'go' (../src/espacc.cc:89:1) in function 'top'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 256 to 1 for loop 'go' (../src/espacc.cc:89:1) in function 'top'.
+WARNING: [XFORM 203-105] Cannot partition array '_inbuff.V' (../src/espacc.cc:89): incorrect partition factor 1.
+WARNING: [XFORM 203-105] Cannot partition array '_outbuff.V' (../src/espacc.cc:90): incorrect partition factor 1.
+WARNING: [XFORM 203-713] All the elements of global array '_inbuff.V' should be updated in process function 'load26', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array '_outbuff.V' should be updated in process function 'compute', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'top', detected/extracted 3 process function(s): 
+	 'load26'
+	 'compute'
+	 'store27'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 483.141 ; gain = 128.531 ; free physical = 274838 ; free virtual = 966366
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 483.141 ; gain = 128.531 ; free physical = 274813 ; free virtual = 966341
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load26' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 50.29 seconds; current allocated memory: 123.975 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 124.114 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 124.210 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 124.299 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'store27' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 124.385 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 124.497 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 124.568 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 124.721 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load26' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load26'.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 124.921 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute'.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 125.503 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'store27' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'store27'.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 126.028 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/out_word_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/in1_word_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/conf_info_size' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/load_ctrl' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/store_ctrl' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 126.782 MB.
+INFO: [RTMG 210-278] Implementing memory 'mac_dma32_w32_top_p_inbuff_V_memcore_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'conf_info_size_c_U(mac_dma32_w32_fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'conf_info_size_c29_U(mac_dma32_w32_fifo_w32_d2_A)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 546.609 ; gain = 192.000 ; free physical = 274802 ; free virtual = 966333
+INFO: [SYSC 207-301] Generating SystemC RTL for top with prefix mac_dma32_w32_.
+INFO: [VHDL 208-304] Generating VHDL RTL for top with prefix mac_dma32_w32_.
+INFO: [VLOG 209-307] Generating Verilog RTL for top with prefix mac_dma32_w32_.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/grayson5/opt/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  7 05:01:37 2020...
+INFO: [HLS 200-10] Creating and opening project '/home/grayson5/esp/accelerators/vivado_hls/mac/hls-work-virtex7/mac_dma64_w32'.
+INFO: [HLS 200-10] Adding design file '../src/espacc.cc' to the project
+INFO: [HLS 200-10] Adding test bench file '../tb/tb.cc' to the project
+INFO: [HLS 200-10] Creating and opening solution '/home/grayson5/esp/accelerators/vivado_hls/mac/hls-work-virtex7/mac_dma64_w32/mac_acc'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+GNU Make 3.82
+Built for x86_64-redhat-linux-gnu
+Copyright (C) 2010  Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Reading makefiles...
+Reading makefile `csim.mk'...
+Reading makefile `Makefile.rules' (search path) (no ~ expansion)...
+Reading makefile `/dev/null' (search path) (don't care) (no ~ expansion)...
+Reading makefile `obj/../../../../../tb/tb.d' (search path) (don't care) (no ~ expansion)...
+Reading makefile `obj/../../../../../src/espacc.d' (search path) (don't care) (no ~ expansion)...
+Reading makefile `obj/tb.d' (search path) (don't care) (no ~ expansion)...
+Reading makefile `obj/espacc.d' (search path) (don't care) (no ~ expansion)...
+Considering target file `csim.exe'.
+ File `csim.exe' does not exist.
+  Considering target file `obj/.dir'.
+   File `obj/.dir' does not exist.
+   Looking for an implicit rule for `obj/.dir'.
+   Trying pattern rule with stem `obj'.
+   Found an implicit rule for `obj/.dir'.
+   Finished prerequisites of target file `obj/.dir'.
+  Must remake target `obj/.dir'.
+Invoking recipe from Makefile.rules:500 to update target `obj/.dir'.
+make[2]: Entering directory `/home/grayson5/esp/accelerators/vivado_hls/mac/hls-work-virtex7/mac_dma64_w32/mac_acc/csim/build'
+Putting child 0x2453eb0 (obj/.dir) PID 807 on the chain.
+Live child 0x2453eb0 (obj/.dir) PID 807 
+Reaping winning child 0x2453eb0 PID 807 
+Live child 0x2453eb0 (obj/.dir) PID 809 
+Reaping winning child 0x2453eb0 PID 809 
+Removing child 0x2453eb0 PID 809 from chain.
+  Successfully remade target file `obj/.dir'.
+  Considering target file `obj/tb.o'.
+   File `obj/tb.o' does not exist.
+    Considering target file `../../../../../tb/tb.cc'.
+     Looking for an implicit rule for `../../../../../tb/tb.cc'.
+     Trying pattern rule with stem `tb.cc'.
+     Trying implicit prerequisite `../../../../../tb/tb.cc,v'.
+     Trying pattern rule with stem `tb.cc'.
+     Trying implicit prerequisite `../../../../../tb/RCS/tb.cc,v'.
+     Trying pattern rule with stem `tb.cc'.
+     Trying implicit prerequisite `../../../../../tb/RCS/tb.cc'.
+     Trying pattern rule with stem `tb.cc'.
+     Trying implicit prerequisite `../../../../../tb/s.tb.cc'.
+     Trying pattern rule with stem `tb.cc'.
+     Trying implicit prerequisite `../../../../../tb/SCCS/s.tb.cc'.
+     No implicit rule found for `../../../../../tb/tb.cc'.
+     Finished prerequisites of target file `../../../../../tb/tb.cc'.
+    No need to remake target `../../../../../tb/tb.cc'.
+    Pruning file `obj/.dir'.
+   Finished prerequisites of target file `obj/tb.o'.
+  Must remake target `obj/tb.o'.
+Invoking recipe from csim.mk:78 to update target `obj/tb.o'.
+Putting child 0x24587c0 (obj/tb.o) PID 810 on the chain.
+Live child 0x24587c0 (obj/tb.o) PID 810 
+   Compiling ../../../../../tb/tb.cc in debug mode
+Reaping winning child 0x24587c0 PID 810 
+Live child 0x24587c0 (obj/tb.o) PID 811 
+Reaping winning child 0x24587c0 PID 811 
+Removing child 0x24587c0 PID 811 from chain.
+  Successfully remade target file `obj/tb.o'.
+  Considering target file `obj/espacc.o'.
+   File `obj/espacc.o' does not exist.
+    Considering target file `../../../../../src/espacc.cc'.
+     Looking for an implicit rule for `../../../../../src/espacc.cc'.
+     Trying pattern rule with stem `espacc.cc'.
+     Trying implicit prerequisite `../../../../../src/espacc.cc,v'.
+     Trying pattern rule with stem `espacc.cc'.
+     Trying implicit prerequisite `../../../../../src/RCS/espacc.cc,v'.
+     Trying pattern rule with stem `espacc.cc'.
+     Trying implicit prerequisite `../../../../../src/RCS/espacc.cc'.
+     Trying pattern rule with stem `espacc.cc'.
+     Trying implicit prerequisite `../../../../../src/s.espacc.cc'.
+     Trying pattern rule with stem `espacc.cc'.
+     Trying implicit prerequisite `../../../../../src/SCCS/s.espacc.cc'.
+     No implicit rule found for `../../../../../src/espacc.cc'.
+     Finished prerequisites of target file `../../../../../src/espacc.cc'.
+    No need to remake target `../../../../../src/espacc.cc'.
+    Pruning file `obj/.dir'.
+   Finished prerequisites of target file `obj/espacc.o'.
+  Must remake target `obj/espacc.o'.
+Invoking recipe from csim.mk:84 to update target `obj/espacc.o'.
+Putting child 0x2458a90 (obj/espacc.o) PID 814 on the chain.
+Live child 0x2458a90 (obj/espacc.o) PID 814 
+   Compiling ../../../../../src/espacc.cc in debug mode
+Reaping winning child 0x2458a90 PID 814 
+Live child 0x2458a90 (obj/espacc.o) PID 815 
+Reaping winning child 0x2458a90 PID 815 
+Removing child 0x2458a90 PID 815 from chain.
+  Successfully remade target file `obj/espacc.o'.
+ Finished prerequisites of target file `csim.exe'.
+Must remake target `csim.exe'.
+Invoking recipe from Makefile.rules:399 to update target `csim.exe'.
+Putting child 0x245c630 (csim.exe) PID 818 on the chain.
+Live child 0x245c630 (csim.exe) PID 818 
+   Generating csim.exe
+Reaping winning child 0x245c630 PID 818 
+Live child 0x245c630 (csim.exe) PID 819 
+Reaping winning child 0x245c630 PID 819 
+Removing child 0x245c630 PID 819 from chain.
+Successfully remade target file `csim.exe'.
+make[2]: Leaving directory `/home/grayson5/esp/accelerators/vivado_hls/mac/hls-work-virtex7/mac_dma64_w32/mac_acc/csim/build'
+--version: No such file or directory
+****start*****
+Test PASSED.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-10] Analyzing design file '../src/espacc.cc' ... 
+WARNING: [HLS 214-113] Variables defined outside dataflow region are not supported: ../src/espacc.cc:94:5
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:46 ; elapsed = 00:01:56 . Memory (MB): peak = 546.609 ; gain = 192.000 ; free physical = 274779 ; free virtual = 966328
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:46 ; elapsed = 00:01:56 . Memory (MB): peak = 546.609 ; gain = 192.000 ; free physical = 274779 ; free virtual = 966328
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-501] Unrolling loop 'load_label0' (../src/espacc.cc:25) in function 'load(ap_int<32>*, dma_word*, unsigned int, dma_info*, int, int)': changing partial unrolling into complete unrolling since the unrolling factor (=2) is no less than the loop trip count (=2).
+INFO: [XFORM 203-501] Unrolling loop 'store_label1' (../src/espacc.cc:51) in function 'store(ap_int<32>*, dma_word*, unsigned int, dma_info*, int, int)': changing partial unrolling into complete unrolling since the unrolling factor (=2) is no less than the loop trip count (=2).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:47 ; elapsed = 00:01:57 . Memory (MB): peak = 546.609 ; gain = 192.000 ; free physical = 274777 ; free virtual = 966328
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:47 ; elapsed = 00:01:57 . Memory (MB): peak = 546.609 ; gain = 192.000 ; free physical = 274776 ; free virtual = 966329
+INFO: [XFORM 203-1101] Packing variable 'in1.word.V' (../src/espacc.cc:72) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'load_ctrl' (../src/espacc.cc:75) into a 96-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'out.word.V' (../src/espacc.cc:72) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'store_ctrl' (../src/espacc.cc:75) into a 96-bit variable.
+WARNING: [XFORM 203-561] Updating loop upper bound from 256 to 1 for loop 'go' (../src/espacc.cc:89:1) in function 'top'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 256 to 1 for loop 'go' (../src/espacc.cc:89:1) in function 'top'.
+INFO: [XFORM 203-501] Unrolling loop 'load_label0' (../src/espacc.cc:25) in function 'load': changing partial unrolling into complete unrolling since the unrolling factor (=2) is no less than the loop trip count (=2).
+INFO: [XFORM 203-501] Unrolling loop 'load_label0' (../src/espacc.cc:25) in function 'load' completely.
+WARNING: [XFORM 203-503] Ignored unroll directive 'store_label1' (../src/espacc.cc:51) in function 'store': multiple loop unroll directives in one loop, use the first one and ignore the rest.
+INFO: [XFORM 203-501] Unrolling loop 'store_label1' (../src/espacc.cc:51) in function 'store' completely.
+INFO: [XFORM 203-101] Partitioning array '_inbuff.V' (../src/espacc.cc:89) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_outbuff.V' (../src/espacc.cc:90) in dimension 1 completely.
+INFO: [XFORM 203-712] Applying dataflow to function 'top', detected/extracted 3 process function(s): 
+	 'load30'
+	 'compute'
+	 'store31'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../src/espacc.cc:68:9) in function 'compute'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:48 ; elapsed = 00:01:57 . Memory (MB): peak = 546.609 ; gain = 192.000 ; free physical = 274768 ; free virtual = 966322
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:48 ; elapsed = 00:01:58 . Memory (MB): peak = 546.609 ; gain = 192.000 ; free physical = 274742 ; free virtual = 966296
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load30' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 66.94 seconds; current allocated memory: 166.851 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 167.007 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 167.080 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 167.203 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'store31' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 167.279 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 167.413 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 167.488 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 167.653 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load30' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load30'.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 167.873 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute'.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 168.578 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'store31' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'store31'.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 169.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/out_word_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/in1_word_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/conf_info_size' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/load_ctrl' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/store_ctrl' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 169.868 MB.
+INFO: [RTMG 210-285] Implementing FIFO 'conf_info_size_c_U(mac_dma64_w32_fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'p_inbuff_0_V_U(mac_dma64_w32_fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'p_inbuff_1_V_U(mac_dma64_w32_fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'conf_info_size_c33_U(mac_dma64_w32_fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'p_outbuff_0_V_U(mac_dma64_w32_fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'p_outbuff_1_V_U(mac_dma64_w32_fifo_w32_d2_A)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:49 ; elapsed = 00:01:59 . Memory (MB): peak = 546.609 ; gain = 192.000 ; free physical = 274733 ; free virtual = 966291
+INFO: [SYSC 207-301] Generating SystemC RTL for top with prefix mac_dma64_w32_.
+INFO: [VHDL 208-304] Generating VHDL RTL for top with prefix mac_dma64_w32_.
+INFO: [VLOG 209-307] Generating Verilog RTL for top with prefix mac_dma64_w32_.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/grayson5/opt/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  7 05:02:44 2020...
+INFO: [HLS 200-112] Total elapsed time: 134.93 seconds; peak allocated memory: 169.868 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Tue Apr  7 05:02:44 2020...
+Reaping winning child 0x212da20 PID 658 
+Removing child 0x212da20 PID 658 from chain.
+Successfully remade target file `hls'.
+make[1]: Leaving directory `/home/grayson5/esp/accelerators/vivado_hls/mac/hls-work-virtex7'
+Reaping winning child 0x212d580 PID 655 
+Live child 0x212d580 (mac-hls) PID 890 
+    INFO Installing available implementations for mac to /home/grayson5/esp/tech/virtex7/acc/mac
+Reaping winning child 0x212d580 PID 890 
+Live child 0x212d580 (mac-hls) PID 891 
+    MAKE mac-hls
+GNU Make 3.82
+Built for x86_64-redhat-linux-gnu
+Copyright (C) 2010  Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Reading makefiles...
+Reading makefile `Makefile'...
+Reading makefile `../../common/common.mk' (search path) (no ~ expansion)...
+Considering target file `install'.
+ File `install' does not exist.
+ Finished prerequisites of target file `install'.
+Must remake target `install'.
+Invoking recipe from Makefile:14 to update target `install'.
+make[1]: Entering directory `/home/grayson5/esp/accelerators/vivado_hls/mac/hls-work-virtex7'
+Putting child 0x21d6e00 (install) PID 893 on the chain.
+Live child 0x21d6e00 (install) PID 893 
+Reaping winning child 0x21d6e00 PID 893 
+Live child 0x21d6e00 (install) PID 894 
+Reaping winning child 0x21d6e00 PID 894 
+Live child 0x21d6e00 (install) PID 895 
+mac_dma32_w32
+mac_dma64_w32
+Reaping winning child 0x21d6e00 PID 895 
+Removing child 0x21d6e00 PID 895 from chain.
+Successfully remade target file `install'.
+make[1]: Leaving directory `/home/grayson5/esp/accelerators/vivado_hls/mac/hls-work-virtex7'
+Reaping winning child 0x212d580 PID 891 
+Live child 0x212d580 (mac-hls) PID 900 
+Reaping winning child 0x212d580 PID 900 
+Live child 0x212d580 (mac-hls) PID 901 
+Reaping winning child 0x212d580 PID 901 
+Removing child 0x212d580 PID 901 from chain.
+Successfully remade target file `mac-hls'.
