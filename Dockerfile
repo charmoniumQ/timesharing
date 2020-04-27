@@ -25,7 +25,9 @@ RUN sh -c "mkdir -p $HOME/opt && sudo chown $(id --user):$(id --group) $HOME/opt
 # I use sh -c so that I can cd without side-effects
 RUN sh -c "sudo rm -rf $HOME/tmp $HOME/opt/leon && mkdir $HOME/tmp && cd $HOME/tmp && printf '\n$HOME/opt/leon\n\n\n' | $HOME/esp/utils/scripts/build_leon3_toolchain.sh"
 
-ENV PATH=${HOME}/opt/leon/mklinuximg:${HOME}/opt/leon/sparc-elf-4.4.2/bin/:/home/grayson5/opt/leon/bin:${PATH}
-
 # I have this in the in the volume
 RUN mv /home/grayson5/esp/socs/xilinx-vc707-xc7vx485t /home/grayson5/esp/socs/xilinx-vc707-xc7vx485t.old
+RUN mv /home/grayson5/esp/soft/leon3/drivers /home/grayson5/esp/soft/leon3/drivers.old
+RUN mv /home/grayson5/esp/accelerators/vivado_hls /home/grayson5/esp/accelerators/vivado_hls.old
+
+RUN sudo yum install -y perl-Env
